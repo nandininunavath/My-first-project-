@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Chatbot</title>
+</head>
+<body>
+<h1>My AI Chatbot</h1>
+
+<input id="msg" placeholder="Type message">
+<button onclick="reply()">Send</button>
+
+<p id="output"></p>
+
+<script>
+function reply() {
+ let text=document.getElementById("msg").value;
+
+ if(text=="hi"){
+   document.getElementById("output").innerText="Hello!";
+ } else {
+   document.getElementById("output").innerText="I am your chatbot";
+ }
+}
+</script>
+
+</body>
+</html>
